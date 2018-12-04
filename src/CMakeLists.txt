@@ -1,1 +1,1 @@
-add_executable(main main.cpp)
+add_executable(check_endian check_endian.cc)
