@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.12)
+project(high_performance_linux_server_programming)
+
+set(CMAKE_CXX_STANDARD 17)
+
+set(SRC_DIR ${PROJECT_SOURCE_DIR}/src)
+
+add_subdirectory(${SRC_DIR})
