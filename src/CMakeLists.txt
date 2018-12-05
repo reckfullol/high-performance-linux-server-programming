@@ -7,3 +7,9 @@ add_executable(accept_connection accept_connection.cc)
 add_executable(tcp_send tcp_send.cc)
 
 add_executable(tcp_recv tcp_recv.cc)
+
+add_executable(tcp_send_buffer_size tcp_send_buffer_size.cc)
+
+add_executable(tcp_recv_buffer_size tcp_recv_buffer_size.cc)
+
+
