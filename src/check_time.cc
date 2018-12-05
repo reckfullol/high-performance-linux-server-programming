@@ -21,7 +21,7 @@ int main(int argc, char* argv[]) {
     struct servent* serv_info = getservbyname("daytime", "tcp");
     assert(serv_info);
 
-    std::cout << "daytime port is " << serv_info->s_port << '\n';
+    std::cout << "daytime port is " << ntohs(serv_info->s_port) << '\n';
 
 
     struct sockaddr_in address{};
