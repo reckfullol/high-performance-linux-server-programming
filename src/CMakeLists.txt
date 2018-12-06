@@ -18,3 +18,5 @@ add_executable(cgi_server cgi_server.cc)
 
 add_executable(http_server http_server.cc)
 
+add_executable(ftp_server ftp_server.cc)
+
