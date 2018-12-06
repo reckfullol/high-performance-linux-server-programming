@@ -15,3 +15,6 @@ add_executable(tcp_recv_buffer_size tcp_recv_buffer_size.cc)
 add_executable(check_time check_time.cc)
 
 add_executable(cgi_server cgi_server.cc)
+
+add_executable(http_server http_server.cc)
+
