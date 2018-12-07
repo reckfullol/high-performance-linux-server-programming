@@ -20,3 +20,5 @@ add_executable(http_server writev.cc)
 
 add_executable(ftp_server sendfile.cc)
 
+# only works on linux
+# add_executable(splice splice.cc)
