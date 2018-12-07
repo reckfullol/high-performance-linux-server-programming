@@ -22,3 +22,5 @@ add_executable(ftp_server sendfile.cc)
 
 # only works on linux
 # add_executable(splice splice.cc)
+
+add_executable(guid guid.cc)
