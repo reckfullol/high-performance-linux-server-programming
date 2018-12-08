@@ -24,3 +24,5 @@ add_executable(ftp_server sendfile.cc)
 # add_executable(splice splice.cc)
 
 add_executable(guid guid.cc)
+
+add_executable(http_parse http_parse.cc)
