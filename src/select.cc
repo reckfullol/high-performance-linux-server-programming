@@ -62,21 +62,18 @@ int main(int argc, char* argv[]) {
         ret = select(connection_fd + 1, &read_fds, nullptr, &exception_fds, nullptr);
         if(ret < 0) {
             std::cout << "selection failure\n";
-            std::cout << "1\n";
             break;
         }
 
         if(FD_ISSET(connection_fd, &read_fds)) {
             ret = recv(connection_fd, buffer, sizeof(buffer) - 1, 0);
             if(ret <= 0) {
-                std::cout << "2\n";
                 break;
             }
             std::cout << "get " << ret << " bytes of normal data: " << buffer << "\n";
         } else if(FD_ISSET(connection_fd, &exception_fds)) {
             ret = recv(connection_fd, buffer, sizeof(buffer) - 1, MSG_OOB);
             if(ret <= 0) {
-                std::cout << "3\n";
                 break;
             }
             std::cout << "get " << ret << " bytes of oob data: " << buffer << "\n";
