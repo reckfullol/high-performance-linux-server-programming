@@ -1,3 +1,15 @@
+# only work on linux
+
+if(!${APPLE})
+
+    add_executable(epoll epoll.cc)
+
+    add_executable(splice splice.cc)
+
+    add_executable(epoll_one_shot epoll_one_shot.cc)
+
+endif()
+
 add_executable(check_endian check_endian.cc)
 
 add_executable(backlog_parameter listen_backlog.cc)
@@ -20,14 +32,9 @@ add_executable(http_server writev.cc)
 
 add_executable(ftp_server sendfile.cc)
 
-# only works on linux
-# add_executable(splice splice.cc)
-
 add_executable(guid guid.cc)
 
 add_executable(http_parse http_parse.cc)
 
 add_executable(select select.cc)
 
-# only works on linux
-#add_executable(epoll epoll.cc)
