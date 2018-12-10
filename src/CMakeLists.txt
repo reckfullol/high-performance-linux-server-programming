@@ -28,3 +28,6 @@ add_executable(guid guid.cc)
 add_executable(http_parse http_parse.cc)
 
 add_executable(select select.cc)
+
+# only works on linux
+#add_executable(epoll epoll.cc)
