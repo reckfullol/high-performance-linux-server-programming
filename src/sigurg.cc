@@ -35,7 +35,7 @@ void add_sig(int sig, void(*sig_handler)(int)) {
     struct sigaction sa{};
     memset(&sa, 0, sizeof(sa));
 
-    sa.__sigaction_u.__sa_handler = sig_handler;
+    sa.sa_handler = sig_handler;
     sa.sa_flags |= SA_RESTART;
     sigfillset(&sa.sa_mask);
 

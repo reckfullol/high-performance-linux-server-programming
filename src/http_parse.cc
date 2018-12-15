@@ -9,7 +9,9 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <strings.h>
+#include <string.h>
 #include <iostream>
+#include <assert.h>
 
 #define BUFFER_SIZE 4096
 

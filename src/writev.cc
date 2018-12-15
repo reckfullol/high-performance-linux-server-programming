@@ -13,6 +13,8 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <fcntl.h>
+#include <strings.h>
+#include <string.h>
 
 #include <iostream>
 

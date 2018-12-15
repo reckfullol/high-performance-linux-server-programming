@@ -13,6 +13,9 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <fcntl.h>
+#include <strings.h>
+#include <string.h>
+#include <sys/sendfile.h>
 
 #include <iostream>
 
@@ -55,7 +58,7 @@ int main(int argc, char* argv[]) {
         int file_fd = open(file_path.c_str(), O_RDONLY);
         struct stat stat_buf{};
         fstat(file_fd, &stat_buf);
-        sendfile(file_fd, conn_fd, 0, &stat_buf.st_size, nullptr, 0);
+        sendfile(file_fd, conn_fd, NULL, stat_buf.st_size);
         close(conn_fd);
     }
 

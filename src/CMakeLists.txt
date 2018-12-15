@@ -1,14 +1,8 @@
-# only work on linux
+add_executable(epoll epoll.cc)
 
-if(!${APPLE})
+add_executable(splice splice.cc)
 
-    add_executable(epoll epoll.cc)
-
-    add_executable(splice splice.cc)
-
-    add_executable(epoll_one_shot epoll_one_shot.cc)
-
-endif()
+add_executable(epoll_one_shot epoll_one_shot.cc)
 
 add_executable(check_endian check_endian.cc)
 

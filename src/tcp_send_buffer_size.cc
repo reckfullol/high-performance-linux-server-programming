@@ -9,6 +9,8 @@
 #include <stdlib.h>
 #include <assert.h>
 #include <errno.h>
+#include <string.h>
+#include <string.h>
 
 #include <iostream>
 
