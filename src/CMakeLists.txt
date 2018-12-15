@@ -35,3 +35,5 @@ add_executable(select select.cc)
 add_executable(unblock_connection unblock_connection.cc)
 
 add_executable(sigurg sigurg.cc)
+
+add_executable(timeout_connect timeout_connect.cc)
