@@ -1,3 +1,5 @@
+include_directories(${INCLUDE_DIR})
+
 add_executable(epoll epoll.cc)
 
 add_executable(splice splice.cc)
@@ -32,7 +34,7 @@ add_executable(http_parse http_parse.cc)
 
 add_executable(select select.cc)
 
-add_executable(unblock_connection unblock_connection.cc)
+add_executable(unblock_connection unblock_connect.cc)
 
 add_executable(sigurg sigurg.cc)
 

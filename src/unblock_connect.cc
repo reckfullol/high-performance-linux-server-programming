@@ -27,7 +27,7 @@ int set_non_blocking(int fd) {
     return old_option;
 }
 
-int unblock_connection(const char* ip, int port, int time) {
+int unblock_connect(const char *ip, int port, int time) {
     struct sockaddr_in address{};
     bzero(&address, sizeof(address));
     address.sin_family = AF_INET;
@@ -97,7 +97,7 @@ int main(int argc, char* argv[]) {
     const char* ip = argv[1];
     int port = atoi(argv[2]);
 
-    int sock_fd = unblock_connection(ip, port, 10);
+    int sock_fd = unblock_connect(ip, port, 10);
     if(sock_fd < 0) {
         return 1;
     }
