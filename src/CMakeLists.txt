@@ -5,6 +5,7 @@ add_executable(epoll epoll.cc)
 add_executable(splice splice.cc)
 
 add_executable(epoll_one_shot epoll_one_shot.cc)
+target_link_libraries(epoll_one_shot pthread)
 
 add_executable(check_endian check_endian.cc)
 
