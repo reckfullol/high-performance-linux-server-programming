@@ -46,7 +46,6 @@ public:
 
     void add_timer(util_timer* timer);
 
-
     void adjust_timer(util_timer* timer);
 
     void delete_timer(util_timer* timer);
