@@ -40,3 +40,5 @@ add_executable(unblock_connection unblock_connect.cc)
 add_executable(sigurg sigurg.cc)
 
 add_executable(timeout_connect timeout_connect.cc)
+
+add_executable(ipc_private ipc_private.cpp)
