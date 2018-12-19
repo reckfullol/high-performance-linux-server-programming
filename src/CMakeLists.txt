@@ -41,6 +41,6 @@ add_executable(sigurg sigurg.cc)
 
 add_executable(timeout_connect timeout_connect.cc)
 
-add_executable(ipc_private ipc_private.cpp)
+add_executable(ipc_private ipc_private.cc)
 
-add_executable(send_fd send_fd.cpp)
+add_executable(send_fd send_fd.cc)
