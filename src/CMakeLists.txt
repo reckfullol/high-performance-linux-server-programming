@@ -44,3 +44,6 @@ add_executable(timeout_connect timeout_connect.cc)
 add_executable(ipc_private ipc_private.cc)
 
 add_executable(send_fd send_fd.cc)
+
+add_executable(sigmask sigmask.cc)
+target_link_libraries(sigmask pthread)
